@@ -5,10 +5,10 @@ import pandas as pd
 import functionsOne as one
 
 # Import Models
-modelClassifier = pickle.load(open(r'https://github.com/ElielVSAlmeida/Productivity/blob/8167c189a6196f2562a845e7274c60901d5067f2/machines/productivity_classifier.p', 'rb'))
-modelRegressor = pickle.load(open(r'https://github.com/ElielVSAlmeida/Productivity/blob/8167c189a6196f2562a845e7274c60901d5067f2/machines/productivity_regressor.p', 'rb'))
-scalerC = pickle.load(open(r'https://github.com/ElielVSAlmeida/Productivity/blob/8167c189a6196f2562a845e7274c60901d5067f2/machines/scaler.p', 'rb'))
-scalerR = pickle.load(open(r'https://github.com/ElielVSAlmeida/Productivity/blob/8167c189a6196f2562a845e7274c60901d5067f2/machines/scalerReg.p', 'rb'))
+modelClassifier = pickle.load(open(r'Productivity\machines\productivity_classifier.p', 'rb'))
+modelRegressor = pickle.load(open(r'Productivity\machines\productivity_regressor.p', 'rb'))
+scalerC = pickle.load(open(r'Productivity\machines\scaler.p', 'rb'))
+scalerR = pickle.load(open(r'Productivity\machines\scalerReg.p', 'rb'))
 
 # Creating flask app object
 
