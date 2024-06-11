@@ -1,11 +1,11 @@
 # Welcome to Productivity Analysis!
 
-First of all, this project aims to show a sample of the abilities in machine learning and neural networks (AI) using **SKLearn** and **TensorFlow**, for operation optimization it was used **OS** and **Dotenv**. The goal is to:
+This project aims to show a sample of my abilities with machine learning and neural networks (AI) using **SKLearn** and **TensorFlow**, **OS** and **Dotenv** were used for operation optimization. The goal is to:
 - Create a **Algorithmic Machine Learning Model** that is based on easily accessible business features.
-- Build an in-depth **Data Analysis** with Interactable Graphs using **Tableau** to further the investigation of what drives Productivity.
-- And format a **Data Base** where data can be stored, organized, related, secured and distributed using **SQL** and frameworks as **SQLAlchemy** and **MySLQConnector**.
+- Build an in-depth **Data Analysis** with Interactive Graphs using **Tableau** to further the investigation of what drives productivity.
+- Format a **Data Base** where data can be stored, organized, related, secured and distributed using **SQL** and frameworks as **SQLAlchemy** and **MySLQConnector**.
 
- The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** was used for visualization. **Flask** along with a bit of HTML was used to build the website, for deployment **GUnicorn** and **Render** was chosen. To interact with the dashboard and use the ML Algorithm to make a prediction use this website [LINK](https://productivity-study.onrender.com).
+ The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** were used for visualization. **Flask** along with a bit of HTML was used to build the website, for deployment **GUnicorn** and **Render** was chosen. To interact with the dashboard and use the ML Algorithm to make a prediction use this website [LINK](https://productivity-study.onrender.com).
 
 # Data Sources
 
