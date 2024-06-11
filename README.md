@@ -5,7 +5,7 @@ First of all, this project aims to show a sample of the abilities in machine lea
 - Build an in-depth **Data Analysis** with Interactable Graphs using **Tableau** to further the investigation of what drives Productivity.
 - And format a **Data Base** where data can be stored, organized, related, secured and distributed using **SQL** and frameworks as **SQLAlchemy** and **MySLQConnector**.
 
- The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** was used for visualization.
+ The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** was used for visualization. **Flask** along with a bit of HTML was used to build the website, for deployment **GUnicorn** and **Render** was chosen. To interact with the dashboard and use the ML Algorithm to make a prediction use this website [LINK](https://productivity-study.onrender.com).
 
 # Data Sources
 
