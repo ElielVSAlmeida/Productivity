@@ -97,9 +97,9 @@ def homepage():
             dfR1 = scalerR.transform(dfR)
             result2 = modelRegressor.predict(dfR1)
 
-            stringC = f"Base on that your productivity is {result1[0]}!"
+            stringC = f"Based on the on the chossen parameters the productivity is {result1[0]}!"
             
-            stringR = f"And it is  estimated to be {round(result2[0], 4)*100}% productive!"
+            stringR = f"Prodictivity Estimate : {round(result2[0], 4)*100}%"
 
             return render_template('main.html', my_result = stringC, result = stringR)
         except:
