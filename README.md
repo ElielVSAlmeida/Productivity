@@ -5,7 +5,7 @@ This project aims to show a sample of my abilities with machine learning and neu
 - Build an in-depth **Data Analysis** with Interactive Graphs using **Tableau** to further the investigation of what drives productivity.
 - Format a **Data Base** where data can be stored, organized, related, secured and distributed using **SQL** and frameworks as **SQLAlchemy** and **MySLQConnector**.
 
- The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** were used for visualization. **Flask** along with a bit of HTML was used to build the website, for deployment **GUnicorn** and **Render** was chosen. To interact with the dashboard and use the ML Algorithm to make a prediction use this website [LINK](https://productivity-study.onrender.com).
+The data was cleaned and formatted with **Pandas**, also **Matplotlib** and **Seaborn** were used for visualization. **Flask** along with a bit of HTML was used to build the website, for deployment **GUnicorn** and **Render** was chosen. To interact with the dashboard and use the ML Algorithm to make a prediction use this website [LINK](https://productivity-study.onrender.com).
 
 # Data Sources
 
