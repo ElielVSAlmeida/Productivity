@@ -103,7 +103,7 @@ def homepage():
 
             return render_template('main.html', my_result = stringC, result = stringR)
         except:
-            return render_template('second.html')
+            return render_template('second.html') or render_template('main.html', my_result = stringC, result = stringR)
     else:
         stringC = ""
         stringR = ""
