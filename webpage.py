@@ -21,9 +21,9 @@ def homepage():
     if request.method == 'POST':
         try:
             # Bool Columns
-            quarter = str(request.form["quarter"])
-            department = str(request.form["department"])
-            week_day = str(request.form["week_day"])
+            quarter = str(request.form["quarter"]) or 2
+            department = str(request.form["department"]) or 'department_finishing'
+            week_day = str(request.form["week_day"]) or 'option3'
 
             # Getting input for Raw columns
             team = int(request.form["team"]) or 8
@@ -36,20 +36,20 @@ def homepage():
             idle_men = float(request.form["idle_men"]) or 0.0
             no_of_style_change = float(request.form["no_of_style_change"]) or 0
             no_of_workers = float(request.form["no_of_workers"]) or 8.0
-            day = int(request.form["day"]) or 15
-            month = int(request.form["month"]) or 2
-            quarter_1 = one.quarter_11(quarter) or 0
-            quarter_2 = one.quarter_21(quarter) or 1
-            quarter_3 = one.quarter_31(quarter) or 0
-            quarter_4 = one.quarter_41(quarter) or 0
-            department_finishing = one.department_finishing1(department) or 1
-            department_sweing = one.department_sweing1(department) or 0
-            week_day_Monday = one.week_day_Monday1(week_day) or 0
-            week_day_Saturday = one.week_day_Saturday1(week_day) or 0
-            week_day_Sunday = one.week_day_Sunday1(week_day) or 0
-            week_day_Thursday = one.week_day_Thursday1(week_day) or 0
-            week_day_Tuesday = one.week_day_Tuesday1(week_day) or 0
-            week_day_Wednesday = one.week_day_Wednesday1(week_day) or 1
+            day = int(request.form["day"])
+            month = int(request.form["month"])
+            quarter_1 = one.quarter_11(quarter)
+            quarter_2 = one.quarter_21(quarter)
+            quarter_3 = one.quarter_31(quarter)
+            quarter_4 = one.quarter_41(quarter)
+            department_finishing = one.department_finishing1(department)
+            department_sweing = one.department_sweing1(department)
+            week_day_Monday = one.week_day_Monday1(week_day)
+            week_day_Saturday = one.week_day_Saturday1(week_day)
+            week_day_Sunday = one.week_day_Sunday1(week_day)
+            week_day_Thursday = one.week_day_Thursday1(week_day)
+            week_day_Tuesday = one.week_day_Tuesday1(week_day)
+            week_day_Wednesday = one.week_day_Wednesday1(week_day)
             itsVH= False
             itsH= False
             itsL= False
@@ -72,10 +72,10 @@ def homepage():
             df1 = scalerC.transform(df)
             result1 = modelClassifier.predict(df1)
 
-            actual_productivity_Low = one.actual_productivity_Low1(result1[0]) or 0
-            actual_productivity_Mid = one.actual_productivity_Mid1(result1[0]) or 1
-            actual_productivity_High =one.actual_productivity_High1(result1[0]) or 0
-            actual_productivity_Very_H = one.actual_productivity_Very_H1(result1[0]) or 0
+            actual_productivity_Low = one.actual_productivity_Low1(result1[0])
+            actual_productivity_Mid = one.actual_productivity_Mid1(result1[0])
+            actual_productivity_High =one.actual_productivity_High1(result1[0])
+            actual_productivity_Very_H = one.actual_productivity_Very_H1(result1[0])
 
             inputRegressor = np.array([[team, targeted_productivity, smv, wip, over_time, incentive,
                                         idle_time, idle_men, no_of_style_change, no_of_workers, day,
@@ -103,10 +103,7 @@ def homepage():
 
             return render_template('main.html', my_result = stringC, result = stringR)
         except:
-            if result1 == None:
-                return render_template('main.html', my_result = stringC, result = stringR)
-            else:
-                return render_template('second.html')
+            return render_template('second.html')
     else:
         stringC = ""
         stringR = ""
