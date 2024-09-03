@@ -21,11 +21,12 @@ def homepage():
     if request.method == 'POST':
         try:
             # Bool Columns
-            quarter = str(request.form["quarter"])
-            department = str(request.form["department"])
-            week_day = str(request.form["week_day"])
+            quarter = str(request.form["quarter"]) or 2
+            department = str(request.form["department"]) or 'department_finishing'
+            week_day = str(request.form["week_day"]) or 'option3'
 
             # Getting input for Raw columns
+<<<<<<< HEAD
             team = int(request.form["team"])
             targeted_productivity = float(request.form["targeted_productivity"])
             smv = float(request.form["smv"])
@@ -36,6 +37,18 @@ def homepage():
             idle_men = float(request.form["idle_men"])
             no_of_style_change = float(request.form["no_of_style_change"])
             no_of_workers = float(request.form["no_of_workers"])
+=======
+            team = int(request.form["team"]) or 8
+            targeted_productivity = float(request.form["targeted_productivity"]) or 0.70
+            smv = float(request.form["smv"]) or 3.90
+            wip = float(request.form["wip"]) or 0.0
+            over_time = float(request.form["over_time"]) or 960.0
+            incentive = float(request.form["incentive"]) or 0.0
+            idle_time = float(request.form["idle_time"]) or 0.0
+            idle_men = float(request.form["idle_men"]) or 0.0
+            no_of_style_change = float(request.form["no_of_style_change"]) or 0
+            no_of_workers = float(request.form["no_of_workers"]) or 8.0
+>>>>>>> 43544da6a0d6af567ce0c1c3deb0c3d1f1adddcf
             day = int(request.form["day"])
             month = int(request.form["month"])
             quarter_1 = one.quarter_11(quarter)
