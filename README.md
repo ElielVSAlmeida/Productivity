@@ -1,9 +1,20 @@
 ![alt text](https://github.com/ElielVSAlmeida/Productivity/blob/main/vizualization/backgroundedit.jpg)
+
+![GitHub Created At](https://img.shields.io/github/created-at/ElielVSAlmeida/Productivity)
+
+
 ![Static Badge](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=%23FFD343)
-![Static Badge](https://img.shields.io/badge/Flask-000000?style=plastic&logo=flask&logoColor=%23FFFFFF)
+
+![Static Badge](https://img.shields.io/badge/SciKit-1c7AE8?style=plastic&logo=scikitlearn&logoColor=%23F7931E)
+
+![Static Badge](https://img.shields.io/badge/Flask-FFFFFF?style=plastic&logo=flask&logoColor=%23000000)
+
 ![Static Badge](https://img.shields.io/badge/DotEnv-000000?style=plastic&logo=dotenv)
+
 ![Static Badge](https://img.shields.io/badge/Tableau-blue?style=plastic&logo=tableau&logoColor=FFFFFF)
+
 ![Static Badge](https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=FFFFFF)
+
 ![Static Badge](https://img.shields.io/badge/Pandas-150458?style=plastic&logo=pandas&logoColor=FFFFFF)
 
 
