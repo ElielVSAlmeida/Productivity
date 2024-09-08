@@ -1,3 +1,12 @@
+![alt text](https://github.com/ElielVSAlmeida/Productivity/blob/main/vizualization/backgroundedit.jpg)
+![Static Badge](https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=%23FFD343)
+![Static Badge](https://img.shields.io/badge/Flask-000000?style=plastic&logo=flask&logoColor=%23FFFFFF)
+![Static Badge](https://img.shields.io/badge/DotEnv-000000?style=plastic&logo=dotenv)
+![Static Badge](https://img.shields.io/badge/Tableau-blue?style=plastic&logo=tableau&logoColor=FFFFFF)
+![Static Badge](https://img.shields.io/badge/MySQL-4479A1?style=plastic&logo=mysql&logoColor=FFFFFF)
+![Static Badge](https://img.shields.io/badge/Pandas-150458?style=plastic&logo=pandas&logoColor=FFFFFF)
+
+
 # Welcome to Productivity Analysis!
 
 This project aims to show a sample of my abilities with machine learning and neural networks (AI) using **SKLearn** and **TensorFlow**, **OS** and **Dotenv** were used for operation optimization. The goal is to:
