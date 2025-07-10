@@ -125,3 +125,13 @@ def flager(row):
     row['itsH'] = row['incentive'] == 50
     
     return row
+
+def theLastFunction_OnlyObjectsForNowOn(value) -> str:
+    if value == 'Mid':
+        value = 'Average'
+    elif value == 'Very H.':
+        value = 'Exceptional'
+    else:
+        return value
+        
+    return value 
